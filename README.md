@@ -21,7 +21,7 @@ Now let's talk about the workflow we will use.
 These are the steps to follow when starting a new feature : 
 
 - Create a new branch based on `main`, let's call it `feature`
-- Do your changes and commit them by using this simple rule : 1 individual change is 1 commit. When you want to fix something you already commited, do not create a new commit, but use rebase to squash your chanegs to the old commit.
+- Do your changes and commit them by using this simple rule : 1 individual change is 1 commit. When you want to fix something you already commited, do not create a new commit, but use rebase to squash your changes to the old commit.
 - When all the commits are done and the feature is finished, you can rebase your banch on `main` in case changes were made on the `main` branch : from your`feature` branch, `git rebase main`. Be careful, if you are working from an intermediate branch you don't want to loose the other merge commits that were made on the `feature` branch. To avoid it you can `git rebase main --rebase-merges`.
 - In case you are working with someone else on that branch (that should be avoided), `git pull feature`.
 - Finally, push and create your Pull Request.
